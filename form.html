@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/funciones.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/movil.css" media="(min-width: 100px) and (max-width:400px)">
+    <link rel="stylesheet" href="css/tablet.css" media="(min-width: 401px) and (max-width:1023px)">
+</head>
+<body>
+  
+
+<section>
+
+    <div class="formulario">
+        <form>
+<h2>Registro de Usuario</h2>
+<label id="mensaje1"></label>
+<input type="text" placeholder="Ingresa tu Nombre" class="name" id="nombre">
+<input type="text" placeholder="Apellido Materno" class="apemate" id="apemate">
+<input type="text" placeholder="Apellido paterno" class="apepate" id="apepate"><br>
+<input type="email" placeholder="email" class="email" onchange="ValidarCorreo()" id="email">
+<input type="tel" placeholder="telefono" class="telef" id="telefono"><br>
+<input type="text" placeholder="Direccion" class="direccion" id="direccion">
+<div class="terminos">
+<label class="label1">Terminos y condiciones</label>
+<label class="label2">Politicas de privacidad</label>
+
+</div>
+<input type="button" class="boton" value="Enviar" onclick="validaformulario()">
+
+</form>
+    </div>
+
+</section>
+
+</body>
+</html>
